@@ -87,69 +87,6 @@ issueflow/
 └── package.json
 ```
 
-## ⚙️ Installation & Setup
-
-### Prerequisites
-
-Make sure the following are installed:
-
-- Node.js (LTS)
-- npm
-- PostgreSQL
-- Git
-
-### 1. Clone the repository
-
-```bash
-git clone YOUR_GITHUB_REPOSITORY_URL
-cd issueflow
-```
-
-### 2. Install dependencies
-
-```bash
-npm install
-```
-
-### 3. Configure environment variables
-
-Create a `.env` file inside the `server/` directory.
-
-```env
-PORT=5000
-DATABASE_URL="postgresql://postgres:YOUR_PASSWORD@localhost:5432/issueflow"
-JWT_SECRET="your_secure_jwt_secret"
-CLIENT_URL="http://localhost:5173"
-```
-
-Replace the database credentials and JWT secret with your own values.
-
-### 4. Set up the database
-
-Create a PostgreSQL database named `issueflow`.
-
-Initialize Prisma and run database migrations:
-
-```bash
-cd server
-
-npx prisma generate
-npx prisma migrate dev --name init
-```
-
-### 5. Run the application
-
-Return to the root directory:
-
-```bash
-cd ..
-npm run dev
-```
-
-Frontend: `http://localhost:5173`
-
-Backend: `http://localhost:5000`
-
 ## 🗄️ Database Models
 
 The application is designed around the following core entities:
