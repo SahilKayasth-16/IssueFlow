@@ -47,10 +47,9 @@ IssueFlow is a full-stack project and issue tracking platform inspired by Jira a
 
 ### Database & Tools
 
-- PostgreSQL
-- Prisma ORM
+- MongoDB
+- Mongoose
 - Git & GitHub
-- pgAdmin 4
 
 ## 📁 Project Structure
 
